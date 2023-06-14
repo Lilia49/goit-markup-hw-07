@@ -1,0 +1,377 @@
+/* CONTAINER  */
+@media screen and (min-width: 428px) {
+  .container {
+    width: 426px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+  .our-team > .container {
+    width: 582px;
+  }
+  .customers > .container {
+    width: 582px;
+  }
+  .footer > .container {
+    width: 582px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  .our-team > .container {
+    width: 1158px;
+  }
+  .customers > .container {
+    width: 1158px;
+  }
+  .footer > .container {
+    width: 1158px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+/*================ HEADER  =========================*/
+
+/* LOGO  */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+}
+
+/* NAVIGATION */
+
+@media screen and (max-width: 427px) {
+  .mobile-menu-contact-phone {
+    font-size: 24px;
+  }
+  .mobile-menu-social-media-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-menu-button {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-link {
+    display: block;
+    position: relative;
+    padding: 24px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-dark);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link.current-page {
+    color: var(--accent-color);
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--accent-color);
+  }
+  .nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .current-page.nav-link::after {
+    opacity: 1;
+  }
+}
+
+/* CONTACTS */
+@media screen and (min-width: 768px) {
+  .contact-info {
+    display: block;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-item:hover,
+  .contact-item:focus {
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .contact-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact-item {
+    display: block;
+    padding: 24px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
+}
+
+/* ============== MAIN PAGE ====================== */
+/* HERO SECTION */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: ;
+    /* 
+    url("../images/hero/people-office.jpg") */
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-image: ;
+    /* url  */
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+/* FEATURES  SECTION*/
+
+@media screen and (min-width: 768px) {
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .features-card {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .features-subtitle {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .features-card {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .features-card-image {
+    display: block;
+    background-color: var(--brand-color-light);
+    border-radius: 4px;
+    width: 100%;
+    height: 112px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .features-text {
+    font-weight: 400;
+  }
+}
+/* WHAT ARE WE DOING SECTION  */
+@media screen and (min-width: 1158px) {
+  .services {
+    display: block;
+    background-color: var(--white-color);
+  }
+
+  .services.section {
+    padding-top: 0;
+  }
+
+  .services-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .services-item {
+    flex-basis: calc((100%-48px) / 3);
+  }
+}
+
+/* OUR TEAM SECTION*/
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .member-card {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .member-card {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}
+
+/* CUSTOMERS  SECTION*/
+
+@media screen and (min-width: 768px) {
+  .cutomers-list {
+    column-gap: 24px;
+  }
+
+  .cutomer-list-card {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .cutomer-list-card {
+    flex-basis: calc((100% - 120px) / 6);
+  }
+}
+/* ================= FOOTER ================  */
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .footer-wrap {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .subscribe-title {
+    text-align: start;
+  }
+  .subscribe-input {
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-container {
+    gap: 0;
+  }
+  .footer-wrap {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+  .social-media-wrap {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+}
+
+/* ================ MODAL WINDOW ================== */
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
+}
+@media screen and (min-width: ) {
+  .modal {
+    width: 408px;
+  }
+}
