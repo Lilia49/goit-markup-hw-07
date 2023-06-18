@@ -172,13 +172,43 @@
 
 /* ============== MAIN PAGE ====================== */
 /* HERO SECTION */
+@media screen and (min-width: 428px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero/dark-bg-tablet.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ), url("../images/hero/dark-bg-tablet@2x.jpg");
+  }
+}
+}
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: ;
-    /* 
-    url("../images/hero/people-office.jpg") */
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero/dark-bg-desktop.jpg");
   }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ), url("../images/hero/dark-bg-desktop@2x.jpg");
+    }
 
   .hero-title {
     max-width: 496px;
@@ -192,8 +222,6 @@
 
 @media screen and (min-width: 1158px) {
   .hero {
-    background-image: ;
-    /* url  */
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -360,6 +388,43 @@
   .social-media-wrap {
     margin-right: 80px;
     margin-bottom: 0;
+  }
+}
+
+/* ==============  PORTFOLIO PAGE ================ */
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .filters-container {
+    justify-content: center;
+    margin-bottom: 64px;
+    gap: 24px;
+  }
+  .portfolio-container {
+    gap: 72px 24px;
+  }
+  .portfolio-card {
+    background-color: var(--white-color);
+    flex-basis: calc(100% - 24px) / 2;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .filters-container {
+    margin-bottom: 72px;
+  }
+  .portfolio-container {
+    gap: 48px 24px;
+  }
+
+  .portfolio-card {
+    flex-basis: calc(100% - 48px) / 3;
   }
 }
 
